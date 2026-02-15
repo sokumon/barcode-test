@@ -4,7 +4,9 @@ const video = document.getElementById('videoElement');
 
 // Define constraints to request only video access
 const constraints = {
-    video: true,
+    video: { 
+    facingMode: { exact: "environment" }
+  } 
 };
 
 // Access the user's media devices and stream the feed
